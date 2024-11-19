@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -57,7 +56,7 @@ class _ImageLabelingScreenState extends State<ImageLabelingScreen> {
             ),
             if (_imageBytes != null) ...[
               const SizedBox(height: 16),
-              Image.memory(_imageBytes!), // Use Image.memory for compatibility
+              Image.memory(_imageBytes!), // Display the selected image
               const SizedBox(height: 16),
               const Text('Detected Labels:', style: TextStyle(fontSize: 18)),
               Expanded(
